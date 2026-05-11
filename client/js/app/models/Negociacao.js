@@ -4,6 +4,7 @@ class Negociacao{
         this._data = new Date(data.getTime()); // ._ convenção para que os valores sejam acessados apenas pela própria classe
         this._quantidade = quantidade;
         this._valor = valor ;
+        Object.freeze(this);
         //
         // Object.freeze(n1); // objeto é congelado, valor não será alterado , porem raso , ainda permite alterar em objetos que possuem metodos de alteração de valor
     }
